@@ -56,5 +56,25 @@
             </aside>
         </div>
         <!--CONTENIDO CENTRAL--> 
+        <div id="centro">
+            <div class="product">
+                <img src="assets/img/bayernpoloazul.png"/>
+                <h2>Camiseta Polo Oficial Bayern Munich 2021/2022</h2>
+                <p>$60 USD</p>
+                <a href="">Comprar</a>
+            </div>
+            <div class="product">
+                <img src="assets/img/bayernpoloazul.png"/>
+                <h2>Camiseta Polo Oficial Bayern Munich 2021/2022</h2>
+                <p>$60 USD</p>
+                <a href="">Comprar</a>
+            </div>
+            <div class="product">
+                <img src="assets/img/bayernpoloazul.png"/>
+                <h2>Camiseta Polo Oficial Bayern Munich 2021/2022</h2>
+                <p>$60 USD</p>
+                <a href="">Comprar</a>
+            </div>
+        </div>
     </body>
 </html>
