@@ -2,20 +2,22 @@
 <html lang="es">
     <head>
         <meta charset="utf-8">
-        <title>Tienda de camisetas</title>
+        <title>Munich Lion</title>
         <link rel="stylesheet" href="assets/css/styles.css"/>
     </head>
     <body>
+        <div id="container">
         <!-- CABECERA-->
         <header id="header">
             <div id="logo">
-                <img src="assets/img/munichlion.png" alt="Logo tienda"/>
+                <img src="assets/img/deutsche lion.png" alt="Logo tienda"/>
                 <a href="index.php">
-                    Tienda
+                    Munich Lion
                 </a>
             </div>
         </header>
         <!--MENU-->
+        
         <nav id="menu">
             <ul>
                 <li>
@@ -81,5 +83,6 @@
         <footer id="footer">
             <p>Desarrollado por Carlos Navarro &copy; <?=date('Y')?></p>
         </footer>
+        </div>
     </body>
 </html>

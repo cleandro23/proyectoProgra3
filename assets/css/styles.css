@@ -1,5 +1,93 @@
+/*Estilos generales*/
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #9b9b9b;
+    opacity: 0.8;
+    
+}
+
+/*enlaces*/
+a{
+    color: #01b1ea
+}
+
+a:visited{
+    color: #01b1ea
+}
+
+a:hover{
+    color: #636363;
+}
+/*container*/
+#container{
+    width: 80%;
+    margin: 0px auto;
+    box-shadow: 0px 0px 10px gray;
+    background: white;
+}
+/*Header*/
+#header{
+    height: 145px;
+    background: #0f0f0f;
+}
+
+
+#logo{
+    float: left;
+    padding: 0px;
+    margin-left: 0px;
+}
 #logo img{
-    width: 150px;
+    float: left;
+    height: 180px;
+}
+
+#logo a{
+    float: left;
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+    color: #01B1EA;
+    text-decoration: none;
+    margin-top: 60px;
+    margin-left: 25px;
+    transition: all 300ms;
+}
+
+/**Menu**/
+
+#menu{
+    clear: both;
+    background: #222222;
+    color: white;
+    height: 55px;
+    border-bottom: 4px solid #01B1EA;
+}
+
+#menu a{
+    color: white;
+    text-decoration: none;
+}
+
+#menu ul{
+    list-style: none ;
+    text-decoration: none;
+    margin: 0px auto;
+    margin-left: 25px;
+}
+
+#menu ul li{
+    line-height: 55px;
+    float: left;
+    border-right: 1px solid #363636;
+    text-decoration: none;
 }
 
 .product img{
