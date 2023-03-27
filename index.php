@@ -44,16 +44,19 @@
         <div id="content">
             <aside id="lateral">
                 <div id="login" class="block_aside">
+                    <h3>Identificate</h3>
                     <form action="#" method="post">
                         <label for="email">Email</label>
-                        <input type="email" name="email"/>
+                        <input type="email" name="email"/><br/>
                         <label for="password">Contraseña</label>
                         <input type="password" name="password"/>
                         <input type="submit" value="Enviar"/>
                     </form>
-                    <a href="#">Mis pedidos</a>
-                    <a href="#">Gestionar pedidos</a>
-                    <a href="#">Gestionar categorias</a>
+                    <ul>
+                        <li><a href="#">Mis pedidos</a></li>
+                        <li><a href="#">Gestionar pedidos</a></li>
+                        <li><a href="#">Gestionar categorias</a></li>
+                    </ul>
                 </div>
             </aside>
         </div>
