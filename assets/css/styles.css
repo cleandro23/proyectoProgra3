@@ -33,7 +33,7 @@ a:hover{
 }
 /*Header*/
 #header{
-    height: 180px;
+    height: 150px;
     background: #0f0f0f;
 }
 
@@ -113,11 +113,11 @@ a:hover{
 /*barra lateral*/
 
 #lateral{
-    width: 25%;
+    width: 15%;
     min-height: 500px;
     float: left;
     margin-top: 20px;
-    margin-right: 10px;
+    margin-left: 10px;
 }
 
 #lateral .block_aside{
@@ -155,7 +155,7 @@ a:hover{
 
 /*FORM*/
 label,
-input [type="text"],
+input[type="text"],
 input[type="password"],
 input[type="email"],
 select{
@@ -207,7 +207,41 @@ button{
     margin-top: 10px;   
    }
 
+/*parte central*/
+#centro{
+    width: 70%;
+    min-height: 500px;
+    float: right;
+    border-left: 1px solid #ccc;
+    box-shadow: -5px -1px 5px #ddd;
+}
+
+#centro h1{
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 20px;
+    padding-top: 0px;
+}
+
+/*productos*/
+
+.product{
+    width: 30%;
+    border: 1px solid red;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
 
 .product img{
     width: 100px;
+}
+
+.product h2{
+    font-size: 18px;
 }

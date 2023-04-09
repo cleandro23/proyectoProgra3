@@ -62,6 +62,7 @@
         </div>
         <!--CONTENIDO CENTRAL--> 
         <div id="centro">
+            <h1>Productos destacados</h1>
             <div class="product">
                 <img src="assets/img/bayernpoloazul.png"/>
                 <h2>Camiseta Polo Oficial Bayern Munich 2021/2022</h2>
