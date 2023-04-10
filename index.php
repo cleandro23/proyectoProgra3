@@ -44,7 +44,7 @@
         <div id="content">
             <aside id="lateral">
                 <div id="login" class="block_aside">
-                    <h3>Identificate</h3>
+                    <h3>Hola, identifícate</h3>
                     <form action="#" method="post">
                         <label for="email">Email</label>
                         <input type="email" name="email"/><br/>
@@ -59,29 +59,29 @@
                     </ul>
                 </div>
             </aside>
-        </div>
-        <!--CONTENIDO CENTRAL--> 
-        <div id="centro">
+            <!--CONTENIDO CENTRAL--> 
+            <div id="centro">
             <h1>Productos destacados</h1>
             <div class="product">
                 <img src="assets/img/bayernpoloazul.png"/>
                 <h2>Camiseta Polo Oficial Bayern Munich 2021/2022</h2>
                 <p>$60 USD</p>
-                <a href="">Comprar</a>
+                <a href="" class="button">Comprar</a>
             </div>
             <div class="product">
                 <img src="assets/img/bayernpoloazul.png"/>
                 <h2>Camiseta Polo Oficial Bayern Munich 2021/2022</h2>
-                <p>$60 USD</p>
-                <a href="">Comprar</a>
+                <p>$64 USD</p>
+                <a href="" class="button">Comprar</a>
             </div>
             <div class="product">
                 <img src="assets/img/bayernpoloazul.png"/>
                 <h2>Camiseta Polo Oficial Bayern Munich 2021/2022</h2>
-                <p>$60 USD</p>
-                <a href="">Comprar</a>
+                <p>$50 USD</p>
+                <a href="" class="button">Comprar</a>
             </div>
         </div>
+        </div>        
 
         <!--Pie de pagina-->
         <footer id="footer">

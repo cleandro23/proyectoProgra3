@@ -33,7 +33,7 @@ a:hover{
 }
 /*Header*/
 #header{
-    height: 150px;
+    height: 180px;
     background: #0f0f0f;
 }
 
@@ -113,7 +113,7 @@ a:hover{
 /*barra lateral*/
 
 #lateral{
-    width: 15%;
+    width: 20%;
     min-height: 500px;
     float: left;
     margin-top: 20px;
@@ -186,7 +186,7 @@ input[type="email"]:focus{
 
 input[type="button"],
 input[type="submit"],
-button{
+button, .button{
     display: block;
     border-radius: 2px;
     width: auto;
@@ -199,6 +199,12 @@ button{
     cursor: pointer;
 }
 
+.button{
+    background: #33ae3d;
+    color: white !important;
+    text-decoration: none;
+}
+
 label,
 input[type="button"],
 input[type="submit"],
@@ -209,7 +215,7 @@ button{
 
 /*parte central*/
 #centro{
-    width: 70%;
+    width: 75%;
     min-height: 500px;
     float: right;
     border-left: 1px solid #ccc;
@@ -231,17 +237,35 @@ button{
 
 .product{
     width: 30%;
-    border: 1px solid red;
     float: left;
     margin-left: 10px;
     margin-right: 10px;
     text-align: center;
+
 }
 
 .product img{
     width: 100px;
+    margin-bottom: 10px;
 }
 
 .product h2{
-    font-size: 18px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.product p{
+    margin-bottom: 10px;
+}
+
+/*footer*/
+
+#footer{
+    clear: both;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background: #222222;
+    border-top: 4px solid #01b1ea;
 }
