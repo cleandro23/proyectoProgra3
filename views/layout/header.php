@@ -3,14 +3,14 @@
     <head>
         <meta charset="utf-8">
         <title>Munich Lion</title>
-        <link rel="stylesheet" href="assets/css/styles.css"/>
+        <link rel="stylesheet" href="<?=base_url?>assets/css/styles.css"/>
     </head>
     <body>
         <div id="container">
         <!-- CABECERA-->
         <header id="header">
             <div id="logo">
-                <img src="assets/img/deutsche lion.png" alt="Logo tienda"/>
+                <img src="<?=base_url?>assets/img/deutsche lion.png" alt="Logo tienda"/>
                 <a href="index.php">
                     Munich Lion
                 </a>
