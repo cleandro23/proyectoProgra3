@@ -10,6 +10,7 @@ class Usuario{
     private $imagen;
     private $db;
 
+
     public function __construct()
     {
         $this->db = Database::connect();
@@ -32,7 +33,7 @@ class Usuario{
     }
 
     function getPassword(){
-        return $this->password ;
+        return password_hash($this->db->real_escape_string($this->password), PASSWORD_BCRYPT, ['cost' => 4]); 
     }
 
     function getRol(){
@@ -60,7 +61,7 @@ class Usuario{
     }
 
     function setPassword($password){
-        $this->password = password_hash($this->db->real_escape_string($password), PASSWORD_BCRYPT, ['cost' => 4]);
+        $this->password = $password;
     }
 
     function setRol($rol){
@@ -73,12 +74,34 @@ class Usuario{
 
     public function save()
     {
-        $sql = "INSERT INTO usuario VALUES(NULL, '{$this->getNombre()}', '{$this->getApellidos()}', '{$this->getEmail()}', '{$this->getPassword()}', 'user', null)";
+        $sql = "INSERT INTO usuarios VALUES(NULL, '{$this->getNombre()}', '{$this->getApellidos()}', '{$this->getEmail()}', '{$this->getPassword()}', 'user', null)";
         $save = $this->db->query($sql);
 
         $result = false;
         if($save){
             $result = true;
+        }
+        return $result;
+    }
+
+    public function login(){
+        $result = false;
+        $email = $this->email;
+        $password = $this->password;
+        //comprobamos si el usuario existe
+        $sql = "SELECT * FROM usuarios WHERE email = '$email'";
+        $login = $this->db->query($sql);
+
+        //verificamos la variable $login, aqui vemos si la consulta está bien con lo que el usuario pone
+        if($login && $login->num_rows == 1){
+            $usuario = $login->fetch_object();
+
+            //verificamos contraseña
+            $verify = password_verify($password, $usuario->password);
+            //$password es lo que el usuario mete, $usuario->password hace referencia a lo que tenemos en el SQL
+            if($verify){
+                $result = $usuario;
+            }
         }
         return $result;
     }
