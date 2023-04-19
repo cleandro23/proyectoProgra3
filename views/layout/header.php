@@ -24,19 +24,19 @@
                     <a href="#">Inicio</a>
                 </li>
                 <li>
-                    <a href="#">Categoria 1</a>
+                    <a href="#">Pants</a>
                 </li>
                 <li>
-                    <a href="#">Categoria 2</a>
+                    <a href="#">T-shirt</a>
                 </li>
                 <li>
-                    <a href="#">Categoria 3</a>
+                    <a href="#">Hoodies</a>
                 </li>
                 <li>
-                    <a href="#">Categoria 4</a>
+                    <a href="#">Underwear</a>
                 </li>
                 <li>
-                    <a href="#">Categoria 5</a>
+                    <a href="#">Shoes</a>
                 </li>
             </ul>
         </nav>

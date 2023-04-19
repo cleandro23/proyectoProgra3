@@ -23,8 +23,8 @@ class usuarioController{
         $usuario = new Usuario();
         $usuario->setNombre($nombre);
         $usuario->setApellidos($apellidos);
-        $usuario->setEmail($apellidos);
-        $usuario->setPassword($apellidos);
+        $usuario->setEmail($email);
+        $usuario->setPassword($password);
         
         $save = $usuario->save();
         if($save){
@@ -70,6 +70,6 @@ class usuarioController{
         if(isset($_SESSION['admin'])){
             unset($_SESSION['admin']);
         }
-        header("Location:".base_url);
+         header("Location:".base_url);
     }
 } //fin clase

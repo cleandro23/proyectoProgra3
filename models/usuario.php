@@ -33,7 +33,7 @@ class Usuario{
     }
 
     function getPassword(){
-        return password_hash($this->db->real_escape_string($this->password), PASSWORD_BCRYPT, ['cost' => 4]); 
+        return password_hash($this->db->real_escape_string($this->password), PASSWORD_BCRYPT, ['cost' => 4]);
     }
 
     function getRol(){
